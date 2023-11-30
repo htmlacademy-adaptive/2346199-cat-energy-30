@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Сергей Тимошин](https://up.htmlacademy.ru/adaptive/30/user/2346199).
-* Наставник: `Олег Цыганов`.
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
