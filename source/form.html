@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cat Energy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="scripts/index.js" defer></script>
+</head>
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html"><img class="image main-header__logo-img" src="images/icons/logo-mobile.svg" width="33"
+        height="38" alt="Логотип Cat Energy" /></a>
+    <a class="main-header__text" href="index.html"><img class="image main-header__logo-text" src="images/icons/logo-text-brand.svg"
+        width="101" height="18" alt="Бенд Cat Energy" /></a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__list-item">
+          <a class="menu-item" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="menu-item" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="menu-item" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+      <button class="main-nav__toggle main-nav__toggle--clossed" type="button"><span class="visually-hidden">Меню</span>
+        <img class="image" src="images/icons/Header-button-toggle.svg" width="24" height="24" alt="Кнопка-гамбургер">
+      </button>
+    </nav>
+      <div class="main-header__button">
+        <button class="main-header__button-program" type="button"><span class="visually-hidden">подобрать программу</span></span></button>
+      </div>
+  </header>
+  <main class="main-form">
+    <section class="title">
+      <h1 class="heading heading--one">Подбор программы</h1>
+      <p class="title__description">
+        Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
+    </section>
+    <section class="checkout">
+      <h2 class="visually-hidden">Анкета</h2>
+      <div class="checkout__row">
+        <div class="checkout-info">
+          <form action="#" method="get">
+            <div class="input-row">
+              <label class="label" for="name" >Имя:*</label>
+              <input id="name" name="name" type="text" value="Барсик" required />
+            </div>
+            <div class="input-row">
+              <label class="label" for="weight" >Вес (кг):*</label>
+              <input id="weight" name="weight" type="number" value="7" min="1" required />
+            </div>
+            <div class="input-row">
+              <label class="label" for="age" >Возраст (лет):</label>
+              <input id="age" name="age" type="number" value="7" min="1" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="checkout__row">
+        <div class="checkout-types">
+          <form action="#" method="get">
+            <label class="radio">
+              <span class="radio__title">Похудение</span>
+              <input type="radio" name="type" value="Похудение" checked>
+            </label>
+            <label class="radio">
+              <span class="radio__title">Набор массы</span>
+              <input type="radio" name="type" value="Набор массы">
+            </label>
+            <label class="radio">
+              <span class="radio__title">Не знаю (Нужен ваш совет)</span>
+              <input type="radio" name="type" value="Не знаю (Нужен ваш совет)">
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="checkout__row">
+        <div class="checkout-contacts">
+          <h3 class="heading heading--three heading--divider">Контактные данные (владельца кота)</h3>
+          <form action="#" method="get">
+            <div class="input-row">
+              <label class="label" for="email" >E-mail:*</label>
+              <input id="email" name="email" type="email" value="kuklachev@gmail.com" required>
+              <img class="input-row__icon" src="images/form/email-stroke.svg" width="20" height="20"  alt="Почта">
+            </div>
+            <div class="input-row">
+              <label class="label" for="phone" >Телефон:*</label>
+              <input id="phone" name="phone" type="tel" value="8 (960) 900-60-90" required>
+              <img class="input-row__icon" src="images/form/phone-stroke.svg" width="20" height="20"  alt="Телефон">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="checkout__row">
+        <div class="checkout-comment">
+          <h3 class="heading heading--three heading--divider">Комментарий</h3>
+          <form action="#" method="get">
+            <textarea class="input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </form>
+        </div>
+      </div>
+      <div class="checkout__row">
+        <div class="checkout-details">
+          <h3 class="heading heading--three heading--divider">Дополнительно</h3>
+          <div class="checkout-details__variants">
+            <form action="#" method="get">
+              <label class="checkbox">
+                <span class="checkbox__title">Сахарозаменитель</span>
+                <input type="checkbox" name="details" value="Сахарозаменитель" checked>
+              </label>
+              <label class="checkbox">
+                <span class="checkbox__title">Питьевая вода</span>
+                <input type="checkbox" name="details" value="Питьевая вода">
+              </label>
+              <label class="checkbox">
+                <span class="checkbox__title">Молоко</span>
+                <input type="checkbox" name="details" value="Молоко">
+              </label>
+              <label class="checkbox">
+                <span class="checkbox__title">Витамины</span>
+                <input type="checkbox" name="details" value="Витамины">
+              </label>
+            </form>
+          </div>
+          <div class="checkout-details__submit">
+            <button class="button" type="submit">Отправить заявку</button>
+            <p class="checkout-details__notice">* — Обязательные поля</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__map" id="map"></div>
+    <a class="footer-logo" href="index.html">
+      <img src="images/icons/logo-text-brand.svg" width="128" height="24" alt="Бенд Cat Energy">
+    </a>
+    <ul class="socials">
+      <li class="socials__item">
+        <a href="#"><img class="image" src="images/icons/vkontakte.svg" width="28" height="22" alt="Вконтакте"></a>
+      </li>
+      <li class="socials__item">
+        <a href="#"><img class="image" src="images/icons/youtube.svg" width="28" height="22"  alt="Youtube"></a>
+      </li>
+      <li class="socials__item">
+        <a href="#"><img class="image" src="images/icons/telegram.svg" width="28" height="22"    alt="Telegram"></a>
+      </li>
+    </ul>
+    <div class="copyright">
+      <span class="copyright__title">HTML Academy</span>
+      <a class="copyright__logo" href="#">
+        <img src="images/icons/Logo_HTMLAcademy.svg" width="27" height="34" alt="Лого HTML Academy">
+      </a>
+    </div>
+  </footer>
+</html>
